@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/  # Update this path as needed
+    destination: /var/www/html/  # Adjust this path as needed
 
 hooks:
   BeforeInstall:
