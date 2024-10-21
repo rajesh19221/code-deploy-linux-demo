@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/  # Update this path as needed
+
+hooks:
+  BeforeInstall:
+    - location: scripts/before_install.sh  # Path to your script
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/setup.sh  # Another script for setup
+      timeout: 300
+      runas: root
