@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su -
 echo "Running before install scripts"
 # Example commands:
 sudo apt-get update
